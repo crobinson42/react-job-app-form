@@ -2,11 +2,11 @@
   "name": "react-job-app-form",
   "version": "1.0.0",
   "description": "A React.js component - Job Application Form",
-  "main": "build/bundle.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --content-base build/ --hot --inline",
-    "build": "webpack"
+    "test": "standard src/**/*",
+    "dev": "webpack-dev-server --config webpack.dev.config.js --content-base dev/ --hot --inline",
+    "build": "npm test && babel src/index.js --out-file dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,11 @@
   "bugs": {
     "url": "https://github.com/crobinson42/react-job-app-form/issues"
   },
+  "standard": {
+    "ignore": [
+      "src/Formatter.js"
+    ]
+  },
   "homepage": "https://github.com/crobinson42/react-job-app-form#readme",
   "devDependencies": {
     "babel-core": "^6.14.0",
@@ -34,7 +39,10 @@
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.14.0",
     "react": "^15.3.1",
+    "react-availability-form": "^1.0.4",
+    "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.1",
+    "standard": "^8.0.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1"
   },
@@ -42,6 +50,10 @@
     "react": "^15.3.1"
   },
   "dependencies": {
-    "react-bootstrap": "^0.30.3"
+    "form-serialize": "^0.7.1",
+    "react-availability-form": "^1.0.6",
+    "react-bootstrap": "^0.30.3",
+    "string-format-validation": "^2.0.1",
+    "string-mask": "^0.3.0"
   }
 }
