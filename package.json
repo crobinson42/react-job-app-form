@@ -1,16 +1,16 @@
 {
   "name": "react-job-app-form",
-  "version": "1.0.0",
   "description": "A React.js component - Job Application Form",
   "main": "dist/index.js",
   "scripts": {
     "test": "standard src/**/*",
     "dev": "webpack-dev-server --config webpack.dev.config.js --content-base dev/ --hot --inline",
-    "build": "npm test && babel src/index.js --out-file dist/index.js"
+    "build": "npm test && rollup -c && babel dist/index.js --out-file dist/index.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crobinson42/react-job-app-form.git"
+    "url": "https://github.com/crobinson42/react-job-app-form.git"
   },
   "keywords": [
     "React.js",
@@ -34,20 +34,26 @@
   },
   "homepage": "https://github.com/crobinson42/react-job-app-form#readme",
   "devDependencies": {
+    "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
     "react": "^15.3.1",
     "react-availability-form": "^1.0.4",
     "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.1",
+    "rollup": "^0.34.13",
+    "rollup-plugin-babel": "^2.6.1",
     "standard": "^8.0.0",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1"
+    "webpack-dev-server": "^1.15.1",
+    "semantic-release": "^4.3.5"
   },
   "peerDependencies": {
-    "react": "^15.3.1"
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   },
   "dependencies": {
     "form-serialize": "^0.7.1",

@@ -50,7 +50,7 @@ class MaskedInput extends React.Component {
 
 MaskedInput.displayName = 'MaskedInput'
 
-module.exports = MaskedInput
+export default MaskedInput
 
 /*
   jQuery Masked Input Plugin
