@@ -3,7 +3,7 @@ var path = require('path')
 module.exports = {
   entry: './dev/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dev'),
     publicPath: '/assets/',
     filename: 'bundle.js'
   },

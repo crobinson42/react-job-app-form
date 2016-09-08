@@ -5,8 +5,8 @@
   "scripts": {
     "test": "standard src/**/*",
     "dev": "webpack-dev-server --config webpack.dev.config.js --content-base dev/ --hot --inline",
-    "build": "npm test && rollup -c && babel dist/index.js --out-file dist/index.js",
-    "gh-pages-build": "rollup -c && babel dev/index.js --out-file dev/index.js",
+    "build": "npm test && rollup -c",
+    "build-dev": "webpack --config webpack.dev.config.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
