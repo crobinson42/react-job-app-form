@@ -56,7 +56,10 @@ export default class Component extends React.Component {
     // }
 
     const formData = serialize(form, {hash: true})
-    console.log(formData)
+
+    if (this.props.onSubmit) {
+      this.props.onSubmit(formData)
+    }
   }
 
   render () {
