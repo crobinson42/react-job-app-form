@@ -7,6 +7,7 @@ export default {
   format: 'cjs',
   plugins: [
     babel({
+      babelrc: false,
       'plugins': [
         ['transform-react-jsx']
       ],

@@ -1,8 +1,6 @@
 'use strict';
 
-function _interopDefault(ex) {
-  return ex && typeof ex === 'object' && 'default' in ex ? ex['default'] : ex;
-}
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
 var ReactDOM = _interopDefault(require('react-dom'));
@@ -73,69 +71,184 @@ var PersonalInformation = function (_React$Component) {
     // }
 
     value: function render() {
-      return React.createElement(reactBootstrap.Well, null, React.createElement('h3', null, 'Personal Information'), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'firstname',
-        placeholder: 'First Name',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'lastname',
-        placeholder: 'Last Name',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'middleinitial',
-        placeholder: 'Middle Initial',
-        maxLength: 1 }))), React.createElement('div', { className: 'hidden-lg' }, React.createElement('hr', null)), React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'address',
-        placeholder: 'Address',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'city',
-        placeholder: 'City',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'state',
-        placeholder: 'State',
-        required: true,
-        maxLength: 2 })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'zip',
-        placeholder: 'Zip',
-        required: true,
-        maxLength: 5 })))), React.createElement(reactBootstrap.Row, null, React.createElement('div', { className: 'hidden-lg' }, React.createElement('hr', null))), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'tel',
-        name: 'phone',
-        placeholder: 'Phone',
-        'data-format': '(999) 999-9999',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'tel',
-        name: 'alternate',
-        placeholder: 'Alternate Phone',
-        'data-format': '(999) 999-9999' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'email',
-        name: 'email',
-        placeholder: 'Email Address',
-        required: true }))), React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Date of Birth'), React.createElement('input', {
-        type: 'date',
-        className: 'form-control',
-        name: 'dob',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        type: 'text',
-        className: 'form-control',
-        name: 'social',
-        placeholder: 'Social Security #',
-        required: true }))))));
+      return React.createElement(
+        reactBootstrap.Well,
+        null,
+        React.createElement(
+          'h3',
+          null,
+          'Personal Information'
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'firstname',
+                placeholder: 'First Name',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'lastname',
+                placeholder: 'Last Name',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'middleinitial',
+                placeholder: 'Middle Initial',
+                maxLength: 1 })
+            )
+          ),
+          React.createElement(
+            'div',
+            { className: 'hidden-lg' },
+            React.createElement('hr', null)
+          ),
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'address',
+                placeholder: 'Address',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'city',
+                placeholder: 'City',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'state',
+                placeholder: 'State',
+                required: true,
+                maxLength: 2 })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'zip',
+                placeholder: 'Zip',
+                required: true,
+                maxLength: 5 })
+            )
+          )
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            'div',
+            { className: 'hidden-lg' },
+            React.createElement('hr', null)
+          )
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'tel',
+                name: 'phone',
+                placeholder: 'Phone',
+                'data-format': '(999) 999-9999',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'tel',
+                name: 'alternate',
+                placeholder: 'Alternate Phone',
+                'data-format': '(999) 999-9999' })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'email',
+                name: 'email',
+                placeholder: 'Email Address',
+                required: true })
+            )
+          ),
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.FormGroup,
+                null,
+                React.createElement(
+                  reactBootstrap.ControlLabel,
+                  null,
+                  'Date of Birth'
+                ),
+                React.createElement('input', {
+                  type: 'date',
+                  className: 'form-control',
+                  name: 'dob',
+                  required: true })
+              ),
+              React.createElement(
+                reactBootstrap.FormGroup,
+                null,
+                React.createElement('input', {
+                  type: 'text',
+                  className: 'form-control',
+                  name: 'social',
+                  placeholder: 'Social Security #',
+                  required: true })
+              )
+            )
+          )
+        )
+      );
     }
   }]);
   return PersonalInformation;
@@ -174,26 +287,125 @@ var AvailabilityInformation = function (_React$Component) {
   }, {
     key: 'renderButtonCheckboxText',
     value: function renderButtonCheckboxText(x) {
-      return x ? 'Y' : React.createElement('span', { className: 'text-muted' }, 'N');
+      return x ? 'Y' : React.createElement(
+        'span',
+        { className: 'text-muted' },
+        'N'
+      );
     }
   }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
 
-      return React.createElement(reactBootstrap.Well, null, React.createElement('h3', null, 'Availability Information'), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement('div', { className: 'form-group' }, React.createElement('input', { type: 'hidden', name: 'available-fulltime', value: this.state.inputFullTime }), React.createElement(reactBootstrap.Button, { onClick: function onClick() {
-          _this2.setState({ inputFullTime: !_this2.state.inputFullTime });
-        }, bsStyle: this.getCheckBoxButtonStyle('inputFullTime') }, this.renderButtonCheckboxText(this.state.inputFullTime)), ' ', ' Available Full Time (28 or more hrs per week)'), React.createElement('div', { className: 'form-group' }, React.createElement('input', { type: 'hidden', name: 'available-parttime', value: this.state.inputPartTime }), React.createElement(reactBootstrap.Button, { onClick: function onClick() {
-          _this2.setState({ inputPartTime: !_this2.state.inputPartTime });
-        }, bsStyle: this.getCheckBoxButtonStyle('inputPartTime') }, this.renderButtonCheckboxText(this.state.inputPartTime)), ' ', ' Available Part Time (less than 28 hrs per week)'), React.createElement('div', { className: 'form-group' }, React.createElement('input', { type: 'hidden', name: 'available-overttime', value: this.state.inputOverTime }), React.createElement(reactBootstrap.Button, { onClick: function onClick() {
-          _this2.setState({ inputOverTime: !_this2.state.inputOverTime });
-        }, bsStyle: this.getCheckBoxButtonStyle('inputOverTime') }, this.renderButtonCheckboxText(this.state.inputOverTime)), ' ', ' Available for Overtime (40+ hours per week)'))), React.createElement('div', { style: { width: '400px' } }, React.createElement('h5', null, 'How many days after hire date can you start working?'), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        type: 'number',
-        className: 'form-control',
-        name: 'availablestart',
-        required: true }))), React.createElement('div', { className: 'text-primary' }, React.createElement('h4', null, 'What Shifts Are You Available To Work?')), React.createElement(ReactAvailabilityForm, { ref: 'availability', onChange: function onChange(a) {
-          _this2.setState({ availability: a });
-        } }), React.createElement('input', { type: 'hidden', name: 'availability', value: JSON.stringify(this.state.availability) }), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Please tell us any other scheduling or availability considerations, ie: school, children, etc.'), React.createElement('textarea', { className: 'form-control', name: 'schedulenotes', placeholder: 'Other Scheduling/Availability Information' })))));
+      return React.createElement(
+        reactBootstrap.Well,
+        null,
+        React.createElement(
+          'h3',
+          null,
+          'Availability Information'
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement('input', { type: 'hidden', name: 'available-fulltime', value: this.state.inputFullTime }),
+              React.createElement(
+                reactBootstrap.Button,
+                { onClick: function onClick() {
+                    _this2.setState({ inputFullTime: !_this2.state.inputFullTime });
+                  }, bsStyle: this.getCheckBoxButtonStyle('inputFullTime') },
+                this.renderButtonCheckboxText(this.state.inputFullTime)
+              ),
+              ' ',
+              ' Available Full Time (28 or more hrs per week)'
+            ),
+            React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement('input', { type: 'hidden', name: 'available-parttime', value: this.state.inputPartTime }),
+              React.createElement(
+                reactBootstrap.Button,
+                { onClick: function onClick() {
+                    _this2.setState({ inputPartTime: !_this2.state.inputPartTime });
+                  }, bsStyle: this.getCheckBoxButtonStyle('inputPartTime') },
+                this.renderButtonCheckboxText(this.state.inputPartTime)
+              ),
+              ' ',
+              ' Available Part Time (less than 28 hrs per week)'
+            ),
+            React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement('input', { type: 'hidden', name: 'available-overttime', value: this.state.inputOverTime }),
+              React.createElement(
+                reactBootstrap.Button,
+                { onClick: function onClick() {
+                    _this2.setState({ inputOverTime: !_this2.state.inputOverTime });
+                  }, bsStyle: this.getCheckBoxButtonStyle('inputOverTime') },
+                this.renderButtonCheckboxText(this.state.inputOverTime)
+              ),
+              ' ',
+              ' Available for Overtime (40+ hours per week)'
+            )
+          )
+        ),
+        React.createElement(
+          'div',
+          { style: { width: '400px' } },
+          React.createElement(
+            'h5',
+            null,
+            'How many days after hire date can you start working?'
+          ),
+          React.createElement(
+            reactBootstrap.FormGroup,
+            null,
+            React.createElement('input', {
+              type: 'number',
+              className: 'form-control',
+              name: 'availablestart',
+              required: true })
+          )
+        ),
+        React.createElement(
+          'div',
+          { className: 'text-primary' },
+          React.createElement(
+            'h4',
+            null,
+            'What Shifts Are You Available To Work?'
+          )
+        ),
+        React.createElement(ReactAvailabilityForm, { ref: 'availability', onChange: function onChange(a) {
+            _this2.setState({ availability: a });
+          } }),
+        React.createElement('input', { type: 'hidden', name: 'availability', value: JSON.stringify(this.state.availability) }),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Please tell us any other scheduling or availability considerations, ie: school, children, etc.'
+              ),
+              React.createElement('textarea', { className: 'form-control', name: 'schedulenotes', placeholder: 'Other Scheduling/Availability Information' })
+            )
+          )
+        )
+      );
     }
   }]);
   return AvailabilityInformation;
@@ -215,13 +427,49 @@ var EducationInformation = function (_React$Component) {
     // }
 
     value: function render() {
-      return React.createElement(reactBootstrap.Well, null, React.createElement('h3', null, 'Education Information'), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'High School'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'highschool' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'College'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'college' })))));
+      return React.createElement(
+        reactBootstrap.Well,
+        null,
+        React.createElement(
+          'h3',
+          null,
+          'Education Information'
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'High School'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'highschool' })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'College'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'college' })
+            )
+          )
+        )
+      );
     }
   }]);
   return EducationInformation;
@@ -251,25 +499,72 @@ var MilitaryInformation = function (_React$Component) {
   }, {
     key: 'renderButtonCheckboxText',
     value: function renderButtonCheckboxText(x) {
-      return x ? 'Y' : React.createElement('span', { className: 'text-muted' }, 'N');
+      return x ? 'Y' : React.createElement(
+        'span',
+        { className: 'text-muted' },
+        'N'
+      );
     }
   }, {
     key: 'renderMilitaryForms',
     value: function renderMilitaryForms() {
       if (this.state.military) {
-        return React.createElement('div', null, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Branch'), React.createElement('input', {
-          className: 'form-control',
-          type: 'text',
-          name: 'militarybranch' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Rank/Pay Grade'), React.createElement('input', {
-          className: 'form-control',
-          type: 'text',
-          name: 'militaryrank' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Job/MOS'), React.createElement('input', {
-          className: 'form-control',
-          type: 'text',
-          name: 'militarymos' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Discharge Status'), React.createElement('input', {
-          className: 'form-control',
-          type: 'text',
-          name: 'militarybranch' })));
+        return React.createElement(
+          'div',
+          null,
+          React.createElement(
+            reactBootstrap.FormGroup,
+            null,
+            React.createElement(
+              reactBootstrap.ControlLabel,
+              null,
+              'Branch'
+            ),
+            React.createElement('input', {
+              className: 'form-control',
+              type: 'text',
+              name: 'militarybranch' })
+          ),
+          React.createElement(
+            reactBootstrap.FormGroup,
+            null,
+            React.createElement(
+              reactBootstrap.ControlLabel,
+              null,
+              'Rank/Pay Grade'
+            ),
+            React.createElement('input', {
+              className: 'form-control',
+              type: 'text',
+              name: 'militaryrank' })
+          ),
+          React.createElement(
+            reactBootstrap.FormGroup,
+            null,
+            React.createElement(
+              reactBootstrap.ControlLabel,
+              null,
+              'Job/MOS'
+            ),
+            React.createElement('input', {
+              className: 'form-control',
+              type: 'text',
+              name: 'militarymos' })
+          ),
+          React.createElement(
+            reactBootstrap.FormGroup,
+            null,
+            React.createElement(
+              reactBootstrap.ControlLabel,
+              null,
+              'Discharge Status'
+            ),
+            React.createElement('input', {
+              className: 'form-control',
+              type: 'text',
+              name: 'militarybranch' })
+          )
+        );
       }
     }
   }, {
@@ -277,9 +572,38 @@ var MilitaryInformation = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return React.createElement(reactBootstrap.Well, null, React.createElement('h3', null, 'Uniformed Service Information'), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement('div', { className: 'form-group' }, React.createElement('input', { type: 'hidden', name: 'military', value: this.state.military }), React.createElement(reactBootstrap.Button, { onClick: function onClick() {
-          _this2.setState({ military: !_this2.state.military });
-        }, bsStyle: this.getCheckBoxButtonStyle('military') }, this.renderButtonCheckboxText(this.state.military)), ' ', ' Served in the US Armed Forces'), this.renderMilitaryForms())));
+      return React.createElement(
+        reactBootstrap.Well,
+        null,
+        React.createElement(
+          'h3',
+          null,
+          'Uniformed Service Information'
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement('input', { type: 'hidden', name: 'military', value: this.state.military }),
+              React.createElement(
+                reactBootstrap.Button,
+                { onClick: function onClick() {
+                    _this2.setState({ military: !_this2.state.military });
+                  }, bsStyle: this.getCheckBoxButtonStyle('military') },
+                this.renderButtonCheckboxText(this.state.military)
+              ),
+              ' ',
+              ' Served in the US Armed Forces'
+            ),
+            this.renderMilitaryForms()
+          )
+        )
+      );
     }
   }]);
   return MilitaryInformation;
@@ -300,23 +624,98 @@ var PersonalReferences = function (_React$Component) {
   createClass(PersonalReferences, [{
     key: 'render',
     value: function render() {
-      return React.createElement(reactBootstrap.Well, null, React.createElement('h3', null, 'Personal References'), React.createElement('p', { style: { width: '400px' }, className: 'text-muted' }, 'Providing references greatly increases your ability to be hired. References are used to verify information about an individual, their character, integrity, & professional relationships.'), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement('h4', null, 'Reference #1'), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'referencename1',
-        placeholder: 'Name' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'referencephone1',
-        placeholder: 'Phone' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Reference Notes'), React.createElement('textarea', { className: 'form-control', name: 'referencenotes1' }))), React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement('h4', null, 'Reference #2'), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'referencename2',
-        placeholder: 'Name' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'referencephone2',
-        placeholder: 'Phone' })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Reference Notes'), React.createElement('textarea', { className: 'form-control', name: 'referencenotes2' })))));
+      return React.createElement(
+        reactBootstrap.Well,
+        null,
+        React.createElement(
+          'h3',
+          null,
+          'Personal References'
+        ),
+        React.createElement(
+          'p',
+          { style: { width: '400px' }, className: 'text-muted' },
+          'Providing references greatly increases your ability to be hired. References are used to verify information about an individual, their character, integrity, & professional relationships.'
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              'h4',
+              null,
+              'Reference #1'
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'referencename1',
+                placeholder: 'Name' })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'referencephone1',
+                placeholder: 'Phone' })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Reference Notes'
+              ),
+              React.createElement('textarea', { className: 'form-control', name: 'referencenotes1' })
+            )
+          ),
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              'h4',
+              null,
+              'Reference #2'
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'referencename2',
+                placeholder: 'Name' })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'referencephone2',
+                placeholder: 'Phone' })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Reference Notes'
+              ),
+              React.createElement('textarea', { className: 'form-control', name: 'referencenotes2' })
+            )
+          )
+        )
+      );
     }
   }]);
   return PersonalReferences;
@@ -345,13 +744,30 @@ var EmploymentInformation = function (_React$Component) {
   }, {
     key: 'renderButtonCheckboxText',
     value: function renderButtonCheckboxText(x) {
-      return x ? 'Y' : React.createElement('span', { className: 'text-muted' }, 'N');
+      return x ? 'Y' : React.createElement(
+        'span',
+        { className: 'text-muted' },
+        'N'
+      );
     }
   }, {
     key: 'renderFired',
     value: function renderFired() {
       if (this.state.terminated) {
-        return React.createElement('div', null, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'What was the reason?'), React.createElement('textarea', { className: 'form-control', name: 'terminatedreason' })));
+        return React.createElement(
+          'div',
+          null,
+          React.createElement(
+            reactBootstrap.FormGroup,
+            null,
+            React.createElement(
+              reactBootstrap.ControlLabel,
+              null,
+              'What was the reason?'
+            ),
+            React.createElement('textarea', { className: 'form-control', name: 'terminatedreason' })
+          )
+        );
       }
     }
   }, {
@@ -359,49 +775,177 @@ var EmploymentInformation = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return React.createElement(reactBootstrap.Well, null, React.createElement('h3', null, 'Employment Information'), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement('div', { className: 'form-group' }, React.createElement('input', { type: 'hidden', name: 'terminated', value: this.state.terminated }), React.createElement(reactBootstrap.Button, { onClick: function onClick() {
-          _this2.setState({ terminated: !_this2.state.terminated });
-        }, bsStyle: this.getCheckBoxButtonStyle('terminated') }, this.renderButtonCheckboxText(this.state.terminated)), ' ', ' Have you ever been fired or asked to resign from a job?'), this.renderFired())), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Previous Employer #1'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'previousemployer1',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Job Title/Position'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'previousemployerposition1',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Reason for Leaving'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'previousemployerreason1',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Dates Employed (from/to)'), React.createElement('input', {
-        className: 'form-control',
-        type: 'date',
-        name: 'previousemployerfrom1',
-        required: true }), React.createElement('input', {
-        className: 'form-control',
-        type: 'date',
-        name: 'previousemployerto1',
-        required: true })))), React.createElement('hr', null), React.createElement(reactBootstrap.Row, null, React.createElement(reactBootstrap.Col, { md: 12, lg: 6 }, React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Previous Employer #2'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'previousemployer2',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Job Title/Position'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'previousemployerposition2',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Reason for Leaving'), React.createElement('input', {
-        className: 'form-control',
-        type: 'text',
-        name: 'previousemployerreason2',
-        required: true })), React.createElement(reactBootstrap.FormGroup, null, React.createElement(reactBootstrap.ControlLabel, null, 'Dates Employed (from/to)'), React.createElement('input', {
-        className: 'form-control',
-        type: 'date',
-        name: 'previousemployerfrom2',
-        required: true }), React.createElement('input', {
-        className: 'form-control',
-        type: 'date',
-        name: 'previousemployerto2',
-        required: true })))));
+      return React.createElement(
+        reactBootstrap.Well,
+        null,
+        React.createElement(
+          'h3',
+          null,
+          'Employment Information'
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement('input', { type: 'hidden', name: 'terminated', value: this.state.terminated }),
+              React.createElement(
+                reactBootstrap.Button,
+                { onClick: function onClick() {
+                    _this2.setState({ terminated: !_this2.state.terminated });
+                  }, bsStyle: this.getCheckBoxButtonStyle('terminated') },
+                this.renderButtonCheckboxText(this.state.terminated)
+              ),
+              ' ',
+              ' Have you ever been fired or asked to resign from a job?'
+            ),
+            this.renderFired()
+          )
+        ),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Previous Employer #1'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'previousemployer1',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Job Title/Position'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'previousemployerposition1',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Reason for Leaving'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'previousemployerreason1',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Dates Employed (from/to)'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'date',
+                name: 'previousemployerfrom1',
+                required: true }),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'date',
+                name: 'previousemployerto1',
+                required: true })
+            )
+          )
+        ),
+        React.createElement('hr', null),
+        React.createElement(
+          reactBootstrap.Row,
+          null,
+          React.createElement(
+            reactBootstrap.Col,
+            { md: 12, lg: 6 },
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Previous Employer #2'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'previousemployer2',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Job Title/Position'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'previousemployerposition2',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Reason for Leaving'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'text',
+                name: 'previousemployerreason2',
+                required: true })
+            ),
+            React.createElement(
+              reactBootstrap.FormGroup,
+              null,
+              React.createElement(
+                reactBootstrap.ControlLabel,
+                null,
+                'Dates Employed (from/to)'
+              ),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'date',
+                name: 'previousemployerfrom2',
+                required: true }),
+              React.createElement('input', {
+                className: 'form-control',
+                type: 'date',
+                name: 'previousemployerto2',
+                required: true })
+            )
+          )
+        )
+      );
     }
   }]);
   return EmploymentInformation;
@@ -540,7 +1084,35 @@ var Component = function (_React$Component) {
     value: function render() {
       var title = this.props.title || 'Job Application';
 
-      return React.createElement('div', null, React.createElement('h2', null, title), React.createElement(MaskedInput, null), React.createElement('form', { 'data-toggle': 'validator', onSubmit: this.handleSubmit, ref: 'form' }, React.createElement(PersonalInformation, null), React.createElement(AvailabilityInformation, null), React.createElement(EducationInformation, null), React.createElement(MilitaryInformation, null), React.createElement(PersonalReferences, null), React.createElement(EmploymentInformation, null), React.createElement('p', null, React.createElement(reactBootstrap.Button, { type: 'submit' }, 'Submit'))));
+      return React.createElement(
+        'div',
+        null,
+        React.createElement(
+          'h2',
+          null,
+          title
+        ),
+        React.createElement(MaskedInput, null),
+        React.createElement(
+          'form',
+          { 'data-toggle': 'validator', onSubmit: this.handleSubmit, ref: 'form' },
+          React.createElement(PersonalInformation, null),
+          React.createElement(AvailabilityInformation, null),
+          React.createElement(EducationInformation, null),
+          React.createElement(MilitaryInformation, null),
+          React.createElement(PersonalReferences, null),
+          React.createElement(EmploymentInformation, null),
+          React.createElement(
+            'p',
+            null,
+            React.createElement(
+              reactBootstrap.Button,
+              { type: 'submit' },
+              'Submit'
+            )
+          )
+        )
+      );
     }
   }]);
   return Component;
